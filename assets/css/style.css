@@ -1,0 +1,79 @@
+
+body {
+    background-color: #404040 !important;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: green;
+}
+
+#startButton {
+    height: 123.6px;
+    width: 200px;
+    color: green;
+    border: 2px solid green;
+    background-color: transparent;
+    font-size: 40px;
+}
+#header-container {
+    width:50%
+    align: center;
+}
+
+#custom-header-text {
+    display: inline;
+    position: relative;
+    font-family: Monospace; 
+    font-size: 10em;
+    color: green;
+    margin-bottom:0;
+}
+
+#header-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    color: green;
+    font-family: Monospace;
+}
+
+#start-button {
+    color: green;
+    font-family: Monospace;
+    text-align: center;
+}
+
+.jumbotron h1 h2 {
+    color: green;
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background: #404040;
+    box-sizing: border-box;
+    border-left: 1em solid green;
+    animation: typing 6s steps(7,end) infinite, blinking 1s step-end infinite;
+    -webkit-animation: typing 6s steps(7,end) infinite, blinking 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 100%;}
+    to {width: 0;}
+}
+
+@keyframes blinking {
+    from, to {border-color: transparent;}
+    50% {border-color: green;}
+}
+
+#buttonRow {
+    text-align: center;
+}

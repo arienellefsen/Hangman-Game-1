@@ -4,7 +4,6 @@
 
 <head>
 <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
-<link href='assets/css/style.css' rel='stylesheet' />
 <meta charset='UTF-8'>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,6 +13,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel='stylesheet' href='assets/css/style.css'>
 <title>
 
 </title>
@@ -21,28 +22,35 @@
 
 <body>
 <div class='container'>
-	<div class='row' id='top-row'>
-		<h1>This is my title area</h1>
+	<div class="header clearfix" id='top-row'>
+        <div class='col-lg-12 col-md-2' id='header-wrapper'> <h1 id='custom-header-text'>Hangman-<span class='cursor'> </span></h1> </div>
+        <!--http://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/-->
 	</div>
-	<div class='row' id='main-row'>
+    <div class='jumbotron'>
+    
+			<div class='col-lg-12'>
+                <div class='row' id='buttonRow'><button id='startButton' value='start' onclick='start()'>Start Game</button></div>
+                <h1 id='gameInstructions'></h1>
+                <h2 id='gameWord'></h2>
+                <h2 id='triesLeft'></h2>
+                <h2 id='wrong-letters'></h2>
+            </div>
 
-		<div class='col-lg-2'></div>
-		<div class='col-lg-8'>
-			<h1>This is the main game area</h1>
-			<input id="whichkey" value='Answer here'>
-		</div>
-		<div class='col-lg-2'></div>
+    </div>
+    <div class='row marketing'>
+        <audio controls>
+            <source src="https://ia800504.us.archive.org/33/items/TetrisThemeMusic/Tetris.ogg" type='audio/ogg'>
+            <source src="https://ia800504.us.archive.org/33/items/TetrisThemeMusic/Tetris.mp3" type='audio/ogg'>
+        Your browser does not support audio elements.
+        </audio>
+    </div>
+    <footer class='footer'></footer>
 	
-
-	</div>
-	<div class='row' id='bottom-row'>
-	
-
-	</div>
 </div>
 
-<script src='assets/javascript/game.js'></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='assets/javascript/game.js'></script>
 </body>
 
 
